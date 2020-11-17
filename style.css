@@ -19,6 +19,10 @@ body {
     height: 15rem;
     margin: 2rem;
     padding: 1rem;
+    background-color: yellow;
+}
+
+.anim:hover{
     animation-name: pleinDeTruc;
     animation-duration: 10s;
     animation-timing-function: linear;
@@ -50,12 +54,12 @@ body {
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: normal;
 }
 
 @keyframes droiteGauche{
     from{
-        margin-left: 0;
+        margin-left: -20%;
     }
 
     to{
