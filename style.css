@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.anim{
+    border: 1px solid black;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem;
+    padding: 1rem;
+    animation-name: pleinDeTruc;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform-origin: center center;
+}
+
+@keyframes pleinDeTruc{
+    from{
+        font-size: 0.5rem;
+        background-color: yellow;
+    }
+
+    to{
+        font-size: 1.5rem;
+        background-color: blueviolet;
+        transform: scale(1.5) rotate(90deg);
+    }
+}
+
+.bonus{
+    border: 1px solid black;
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    top: 30rem;
+    animation-name: droiteGauche;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes droiteGauche{
+    from{
+        margin-left: 0;
+    }
+
+    to{
+        margin-left: 100%;
+    }
+}
+
